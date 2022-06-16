@@ -1,0 +1,116 @@
+@import url('mobile.css');
+@import url('tablet.css');
+@import url('desktop.css');
+
+
+@media (min-width:1280px) {
+
+html,body{
+  overflow: hidden;
+}
+
+  body{
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.hide{
+  display: none;
+
+}
+
+.check{
+background: var(--color-selected);
+}
+
+.check svg path{
+  fill: white;
+}
+
+main{
+width: 100%;
+height: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
+
+}
+
+.controlTime{
+ 
+
+  display: grid;
+
+    
+
+}
+.time{
+  align-self: end;
+  justify-self: center;
+
+  width: 100%;
+  text-align: center;
+  
+  font-size: clamp(10rem,10rem + 5vw,30rem);
+  font-family: 'Roboto';
+  color: var(--color-primary);
+}
+
+.control{
+display: grid;
+grid-template-rows: 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 1rem;
+
+align-self:start;
+
+
+
+
+}  
+
+.control button{
+
+border: none;
+border-radius: 15rem;
+background-color: transparent;
+
+
+}
+
+.control button svg{
+  
+  height:30rem;
+  width: clamp(10rem,10rem + 2vw,15rem);
+
+}
+
+.sons{
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+padding: 20rem 10rem;
+
+
+}
+
+.sons button{
+
+border: none;
+height: 20rem;
+width: 20rem;
+
+border-radius: 15rem;
+
+
+
+}
+
+  
+}
+
+
+
+
